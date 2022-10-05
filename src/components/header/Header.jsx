@@ -1,10 +1,14 @@
+import '../../styles/Header.scss'
 import { Link } from 'react-router-dom'
 
 export function Header() {
   return (
-    <div>
+    <div className='header'>
       <Link to="/">
-        <h2>KASA</h2>
+        <img src={require('../../assets/img/LOGO.png')} alt='logo' className='header__logo'></img>
+      </Link>
+      <Link to="/">
+        <h3>Accueil</h3>
       </Link>
       <Link to="/apropos">
         <h3>A propos</h3>
