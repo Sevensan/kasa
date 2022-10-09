@@ -13,7 +13,7 @@ export default function Carousel(props) {
   return (
     <div className='carousel'>
       <p onClick={prevSlide} className="arrow prev"> {'<'} </p>
-        <img src={pictures[slideNumber]} key={slideNumber} alt={slideNumber} />
+      <img src={pictures[slideNumber]} key={slideNumber} alt={slideNumber} />
       <p onClick={nextSlide} className="arrow next"> {'>'} </p>
     </div>
   )
