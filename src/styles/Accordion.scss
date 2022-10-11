@@ -1,0 +1,42 @@
+.accordion {
+  margin: 1rem 0;
+  font-weight: 500;
+  p{
+    margin: 0 !important;
+    padding: 10px;
+  }
+  &-title{
+    background-color: #FF6060;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px !important;
+  }
+  &-description{
+    position: relative;
+    bottom: 7px;
+    left: 0;
+    width: 100%;
+    padding-top: 15px;
+    background-color: #E5E5E5;
+    border-radius: 0 0 10px 10px;
+    color: #FF6060;
+    z-index: -1;
+
+    p{
+      line-height: 1.5rem;
+    }
+  }
+  img {
+    transform-origin: center;
+    transition: all .2s;
+  }
+  .opened{
+    transform: rotate(-180deg);
+  }
+  .closed{
+    transform: rotate(0deg);
+  }
+}

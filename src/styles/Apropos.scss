@@ -1,0 +1,23 @@
+
+.apropos{
+  padding: 0 1rem;
+  .accordions{
+    margin: 0 1rem;
+  }
+}
+
+@media screen and (min-width: 796px) {
+  .apropos{
+    .accordions{
+      margin: 0 5rem;
+    }
+  }
+}
+@media screen and (min-width: 1024px) {
+  .apropos{
+      padding: 0 1rem;
+    .accordions{
+      margin: 0 10rem;
+    }
+  }
+}

@@ -1,6 +1,4 @@
 .carousel{
-  margin: 0 auto;
-  width: 80vw;
   height: 300px;
   display: flex;
   justify-content: center;
@@ -8,16 +6,18 @@
   position: relative;
 
   .arrow{
-    font-size: 7rem;
+    font-size: 3rem;
     color: white;
     position: absolute;
     cursor: pointer;
   }
   .prev{
     left: 0;
+    padding-left: 5px
   }
   .next{
     right: 0;
+    padding-right: 5px;
   }
 
   img{

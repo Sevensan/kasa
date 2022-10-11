@@ -1,9 +1,27 @@
 .header{
   display: flex;
   align-items: center;
+  background-color: white;
   justify-content: space-between;
-  padding: 0 1rem;
+  padding: 1rem;
+
   &__logo{
-    width: 5rem;
+    width: 7rem;
+  }
+  &-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h3{
+      color: #FF6060;
+      font-size: 12px;
+      font-weight: 500;
+      text-transform: uppercase;
+      margin: 0 1rem;
+    }
+  }
+  .active{
+    border-bottom: 1px solid #FF6060;
   }
 }

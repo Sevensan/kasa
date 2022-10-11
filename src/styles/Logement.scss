@@ -1,0 +1,46 @@
+.logement{
+  margin: 0 1rem;
+  color: #FF6060;
+
+  h1{
+    font-weight: 500;
+    font-size: 18px;
+  }
+  p{
+    font-size: 14px;
+  }
+  .tags{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .host{
+      display: flex;
+      font-size: 12px;
+      align-items: center;
+
+      img{
+        border-radius: 50%;
+        height: 3rem;
+        width: 3rem;
+        margin-left: .5rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 769px) {
+.logement{
+  margin: 0 5rem;
+  .accordions{
+    display: grid;
+    grid-template-columns: repeat(2, 1FR);
+    gap: 1rem;
+  }
+}
+}
