@@ -4,20 +4,26 @@
   justify-content: center;
   align-items: center;
   position: relative;
+  .arrows{
+    display: flex;
+    align-items: center;
 
-  .arrow{
-    font-size: 3rem;
-    color: white;
-    position: absolute;
-    cursor: pointer;
-  }
-  .prev{
-    left: 0;
-    padding-left: 5px
-  }
-  .next{
-    right: 0;
-    padding-right: 5px;
+    .arrow{
+      color: white;
+      position: absolute;
+      cursor: pointer;
+      width: 1rem;
+      height: auto;
+      margin: 0 !important;
+    }
+    .prev{
+      left: 0;
+      padding-left: 5px
+    }
+    .next{
+      right: 0;
+      padding-right: 5px;
+    }
   }
 
   img{
@@ -26,5 +32,11 @@
     object-fit: cover;
     object-position: center;
     border-radius: 2rem;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .arrow{
+    width: 3rem !important;
   }
 }

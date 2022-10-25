@@ -13,8 +13,8 @@ export default function Apropos() {
   return (
     <div className="apropos">
       <Banner img='apropos.png' />
-      <div class="accordions">
-        {contents.map( content => <Accordion content={content} /> )}
+      <div className="accordions">
+        {contents.map( (content, index) => <Accordion content={content} key={index} /> )}
       </div>
     </div>
   )

@@ -12,9 +12,14 @@ export default function Carousel(props) {
   }
   return (
     <div className='carousel'>
-      <p onClick={prevSlide} className="arrow prev"> {'<'} </p>
+      {
+      pictures.length > 1 &&
+      <div className='arrows'>
+        <img src={require('../../assets/img/arrow-left.png')} onClick={prevSlide} className="arrow prev" alt="arrow" />
+        <img src={require('../../assets/img/arrow-next.png')} onClick={nextSlide} className="arrow next" alt="arrow" />
+      </div>
+      }
       <img src={pictures[slideNumber]} key={slideNumber} alt={slideNumber} />
-      <p onClick={nextSlide} className="arrow next"> {'>'} </p>
     </div>
   )
 }

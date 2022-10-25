@@ -14,7 +14,7 @@ export default function Accordion (props) {
           accordionStatus &&
           <div className='accordion-description'>
             { typeof content.description === 'object' ?
-              content.description.map(desc => <p>{ desc }</p>)
+              content.description.map((desc, index) => <p key={index}>{ desc }</p>)
             : <p>{ content.description }</p>
             }
           </div>
